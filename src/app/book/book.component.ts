@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Book } from '../models/book';
 
 @Component({
   selector: 'app-book',
@@ -8,6 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './book.component.css'
 })
 export class BookComponent {
-  title ='Angular';
-  year = 2024;
+
+  book: Book = {
+    title: 'Angular',
+    year: 2024
+  }
+
 }
